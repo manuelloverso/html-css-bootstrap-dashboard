@@ -12,13 +12,9 @@ body {
 }
 
 .debug {
-  & header {
-    border: 1px dashed;
-  }
-
   & aside {
-    border: 1px dashed;
-    width: 100px;
+    /* border: 1px dashed; */
+    /* width: 100px; */
   }
 
   .banner {
