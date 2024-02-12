@@ -7,12 +7,13 @@ body {
   --bg-aside-2: #10273d;
   --bg-header: #f8f9fa;
   --bg-banner: #1b72e8;
+  --bg-searchbar: #e5e5e5;
+  --bell: #ff8f00;
 }
 
 .debug {
   & header {
     border: 1px dashed;
-    height: 70px;
   }
 
   & aside {
@@ -29,6 +30,53 @@ body {
   }
 }
 
+/* #region HEADER */
+
+header {
+  height: 70px;
+
+  .searchbar {
+    background-color: var(--bg-searchbar);
+
+    > input {
+      background-color: var(--bg-searchbar);
+      min-width: 10px;
+    }
+
+    > input:focus-visible {
+      outline: none;
+    }
+  }
+
+  .icons {
+    .icons-none {
+      gap: 15px;
+      color: grey;
+    }
+
+    .bell-icon {
+      & i {
+        color: var(--bell);
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+/* #endregion HEADER */
+
+/* #region ASIDE */
+
+aside {
+  height: calc(100vh - 70px);
+  background-color: #051e34;
+  background-image: url(../img/sidebar-bg.png);
+}
+
+/* #endregion ASIDE */
+
+/* #region MAIN */
+
 main {
   height: calc(100vh - 70px);
   overflow-y: auto;
@@ -38,7 +86,4 @@ main {
   }
 }
 
-aside {
-  height: calc(100vh - 70px);
-  background-color: #051e34;
-}
+/* #endregion MAIN */
