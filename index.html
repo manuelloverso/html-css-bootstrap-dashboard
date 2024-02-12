@@ -84,8 +84,8 @@
       </div>
     </header>
 
-    <!-- Site Aside Bar -->
     <div class="my-container d-flex">
+      <!-- Site Aside Bar -->
       <aside class="d-flex flex-column p-4 justify-content-between text-white">
         <div class="top d-flex flex-column gap-3">
           <!-- Nav Link -->
@@ -134,7 +134,47 @@
 
       <!-- Site Main -->
       <main class="flex-grow-1">
-        <div class="banner"></div>
+        <!-- Top Banner -->
+        <div
+          class="banner row flex-column flex-md-row text-white row-gap-3 py-4 px-3"
+        >
+          <!-- New Student Offcanvas -->
+          <div class="col-12 col-md-3 order-md-1 fs-5">
+            <span class="me-3">Nuovo Studente</span>
+
+            <a
+              data-bs-toggle="offcanvas"
+              href="#offcanvas"
+              role="button"
+              aria-controls="offcanvasExample"
+              class="btn btn-outline-light fs-3 px-3 py-1"
+              >+</a
+            >
+          </div>
+
+          <!-- Boolean -->
+          <div class="col-8 col-md-6 boolean">
+            <span class="fs-3">Boolean</span>
+            <span class="label d-inline-block px-2 py-1 rounded-pill fs-6"
+              >Piano Blaze</span
+            >
+            <span class="label d-inline-block px-2 py-1 rounded-pill fs-6"
+              >3 app</span
+            >
+            <span><i class="fa-solid fa-angles-right"></i></span>
+            <span class="label d-inline-block px-2 py-1 rounded-pill fs-6"
+              >+</span
+            >
+          </div>
+
+          <!-- Online Students -->
+          <div class="col-12 col-md-3">
+            <p class="mb-1">Studenti online negli ultimi 30 minuti</p>
+            <span class="fs-1">125</span>
+          </div>
+        </div>
+
+        <!-- Main Cards -->
         <div class="row m-0 gy-4">
           <div class="col-12 col-xl-8">
             <!-- Classes Card -->

@@ -18,7 +18,7 @@ body {
   }
 
   .banner {
-    height: 120px;
+    /* height: 120px; */
   }
 
   .card {
@@ -83,6 +83,14 @@ main {
 
   .banner {
     background-color: var(--bg-banner);
+
+    .boolean {
+      .label {
+        background-color: rgba(0, 0, 0, 0.27);
+        white-space: nowrap;
+        margin-bottom: 6px;
+      }
+    }
   }
 }
 
