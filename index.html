@@ -18,14 +18,39 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Dashboard</title>
   </head>
-  <body>
+  <body class="debug">
     <!-- Site Header -->
     <header></header>
 
     <!-- Site Aside Bar -->
-    <aside></aside>
+    <div class="my-container d-flex">
+      <aside class="d-flex flex-column">
+        <div class="navigate">
+          <div class="icon"></div>
+          <div class="text d-none d-xl-inline-block"></div>
+        </div>
+      </aside>
 
-    <!-- Site Main -->
-    <main></main>
+      <!-- Site Main -->
+      <main class="flex-grow-1">
+        <div class="banner"></div>
+        <div class="row m-0">
+          <div class="col-12 col-xl-8">
+            <!-- Classes Card -->
+            <div class="card">Classes</div>
+
+            <!-- FAQ Card -->
+            <div class="card">Faq</div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <!-- Todo Card -->
+            <div class="card">Todo</div>
+
+            <!-- Stats Card -->
+            <div class="card">Stats</div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

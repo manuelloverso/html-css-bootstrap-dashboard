@@ -1,3 +1,44 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+:root {
+  --bg-aside-1: #051e34;
+  --bg-aside-2: #10273d;
+  --bg-header: #f8f9fa;
+  --bg-banner: #1b72e8;
+}
+
+.debug {
+  & header {
+    border: 1px dashed;
+    height: 70px;
+  }
+
+  & aside {
+    border: 1px dashed;
+    width: 100px;
+  }
+
+  .banner {
+    height: 120px;
+  }
+
+  .card {
+    height: 500px;
+  }
+}
+
+main {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+
+  .banner {
+    background-color: var(--bg-banner);
+  }
+}
+
+aside {
+  height: calc(100vh - 70px);
+  background-color: #051e34;
+}
