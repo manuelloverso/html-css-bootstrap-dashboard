@@ -11,7 +11,7 @@ body {
 }
 
 .debug {
-  & aside {
+  .sidebar {
     /* border: 1px dashed; */
     /* width: 100px; */
   }
@@ -66,10 +66,29 @@ header {
 
 /* #region ASIDE */
 
-aside {
+.sidebar {
   height: calc(100vh - 70px);
   background-color: #051e34;
   background-image: url(../img/sidebar-bg.png);
+
+  .navigate {
+    & a {
+      display: inline-block;
+      padding: 10px;
+      color: white;
+    }
+  }
+}
+
+.navigate:hover {
+  background-color: white;
+  & a {
+    color: black;
+  }
+
+  & i {
+    color: black;
+  }
 }
 
 /* #endregion ASIDE */
