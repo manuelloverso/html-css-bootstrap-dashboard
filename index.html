@@ -133,7 +133,7 @@
       </aside>
 
       <!-- Site Main -->
-      <main class="flex-grow-1">
+      <main class="flex-grow-1 overflow-x-hidden">
         <!-- Top Banner -->
         <div
           class="banner row flex-column flex-md-row text-white row-gap-3 py-4 px-3"
@@ -354,15 +354,153 @@
             </div>
 
             <!-- FAQ Card -->
-            <div class="card">Faq</div>
+            <div class="card p-0">
+              <div class="card-header">
+                <h4 class="m-0">F.A.Q.</h4>
+              </div>
+              <div class="card-body">
+                <div class="accordion accordion-flush" id="faq">
+                  <!-- First Accordion -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Come aggiungere un nuovo studente?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionFlushExample"
+                      style=""
+                    >
+                      <div class="accordion-body">
+                        Placeholder content for this accordion, which is
+                        intended to demonstrate the
+                        <code>.accordion-flush</code> class. This is the first
+                        item's accordion body.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Second Accordion -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Come posso accedere alle informazioni del mio account?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Placeholder content for this accordion, which is
+                        intended to demonstrate the
+                        <code>.accordion-flush</code> class. This is the second
+                        item's accordion body. Let's imagine this being filled
+                        with some actual content.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Third Accordion -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Posso usare questa dashboard da mobile?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Placeholder content for this accordion, which is
+                        intended to demonstrate the
+                        <code>.accordion-flush</code> class. This is the second
+                        item's accordion body. Let's imagine this being filled
+                        with some actual content.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-12 col-xl-4">
             <!-- Todo Card -->
-            <div class="card">Todo</div>
+            <div class="card p-0">
+              <div class="card-header">
+                <h4 class="m-0">Todo</h4>
+              </div>
+
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="firstCheckbox"
+                    />
+                    <label class="form-check-label" for="firstCheckbox"
+                      >Kickoff nuove classi</label
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="secondCheckbox"
+                    />
+                    <label class="form-check-label" for="secondCheckbox"
+                      >Lezione su Bootstrap</label
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="thirdCheckbox"
+                    />
+                    <label class="form-check-label" for="thirdCheckbox"
+                      >Controllare username GitHub studenti</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
 
             <!-- Stats Card -->
-            <div class="card">Stats</div>
+            <div class="card p-0">
+              <img src="./assets/img/stats.jpeg" alt="" class="card-img-top" />
+            </div>
           </div>
         </div>
       </main>
