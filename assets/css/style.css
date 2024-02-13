@@ -115,6 +115,24 @@ main {
       }
     }
   }
+
+  #offcanvas {
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      width: 700px;
+    }
+  }
+}
+
+.offcanvas {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .offcanvas {
+    width: 400px;
+  }
 }
 
 /* #endregion MAIN */
